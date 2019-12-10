@@ -9,15 +9,19 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
+    //'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    // required to lint *.vue files
+    'plugin:vue/essential'
   ],
   plugins: [
-    'prettier'
+    'prettier',
+    'vue'
   ],
   // add your custom rules here
   rules: {
+    // eslint-disable-next-line
   }
 }
